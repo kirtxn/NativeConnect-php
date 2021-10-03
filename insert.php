@@ -10,4 +10,6 @@
      $sql = "INSERT INTO R (voltage, current, power, energy, frequency, pf) VALUE ('$voltage', '$current', '$power', '$energy', '$frequency', '$pf')";
      $query = mysqli_query($connect, $sql);
 
+     echo "Nice Info Gan";
+
 ?>
