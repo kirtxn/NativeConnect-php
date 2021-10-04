@@ -1,4 +1,5 @@
 <?php
+     // connect to database
      include 'connect.php';
 
      // R
@@ -25,13 +26,17 @@
      $frequencyT = $_GET['frequencyT'];
      $pfT = $_GET['pfT'];
 
+     // create query
      $sqlR = "INSERT INTO R (voltage, current, power, energy, frequency, pf) VALUE ('$voltageR', '$currentR', '$powerR', '$energyR', '$frequencyR', '$pfR')";
      $sqlS = "INSERT INTO S (voltage, current, power, energy, frequency, pf) VALUE ('$voltageS', '$currentS', '$powerS', '$energyS', '$frequencyS', '$pfS')";
      $sqlT = "INSERT INTO T (voltage, current, power, energy, frequency, pf) VALUE ('$voltageT', '$currentT', '$powerT', '$energyT', '$frequencyT', '$pfT')";
+     
+     // insert query to database
      $queryR = mysqli_query($connect, $sqlR);
      $queryS = mysqli_query($connect, $sqlS);
      $queryT = mysqli_query($connect, $sqlT);
 
+     // notification
      echo "Nice Info Gan -> " . date("h:i:sa");;
 
 ?>
