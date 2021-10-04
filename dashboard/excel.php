@@ -44,5 +44,71 @@
                ?>
           </tbody>
      </table>
+     <br>
+     <table border="1">
+          <thead>
+               <tr>
+               <th>No</th>
+               <th>voltage</th>
+               <th>current</th>
+               <th>power</th>
+               <th>energy</th>
+               <th>frequency</th>
+               <th>pf</th>
+               </tr>
+          </thead>
+          <tbody>
+               <?php 
+               $no = 1;
+               $data = mysqli_query($connect,"select * from S");
+               while($d=mysqli_fetch_array($data)){
+               ?>
+               <tr>
+                    <td><?php echo $no++; ?></td>
+                    <td><?php echo $d['voltage']; ?></td>
+                    <td><?php echo $d['current']; ?></td>
+                    <td><?php echo $d['power']; ?></td>
+                    <td><?php echo $d['energy']; ?></td>
+                    <td><?php echo $d['frequency']; ?></td>
+                    <td><?php echo $d['pf']; ?></td>
+               </tr>
+               <?php 
+               }
+               ?>
+          </tbody>
+     </table>
+     <br>
+     <table border="1">
+          <thead>
+               <tr>
+               <th>No</th>
+               <th>voltage</th>
+               <th>current</th>
+               <th>power</th>
+               <th>energy</th>
+               <th>frequency</th>
+               <th>pf</th>
+               </tr>
+          </thead>
+          <tbody>
+               <?php 
+               $no = 1;
+               $data = mysqli_query($connect,"select * from T");
+               while($d=mysqli_fetch_array($data)){
+               ?>
+               <tr>
+                    <td><?php echo $no++; ?></td>
+                    <td><?php echo $d['voltage']; ?></td>
+                    <td><?php echo $d['current']; ?></td>
+                    <td><?php echo $d['power']; ?></td>
+                    <td><?php echo $d['energy']; ?></td>
+                    <td><?php echo $d['frequency']; ?></td>
+                    <td><?php echo $d['pf']; ?></td>
+               </tr>
+               <?php 
+               }
+               ?>
+          </tbody>
+     </table>
 </body>
 </html>
