@@ -147,6 +147,7 @@
           include "js/power.php";
           include "js/energy.php";
           include "js/frequency.php";
+          include "js/pf.php";
      ?>
 
      <script>
