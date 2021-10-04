@@ -9,5 +9,36 @@
                </ol>
                <h3 class="font-weight-bolder mb-0 mt-3">Dashboard</h3>
           </nav>
+          <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+               <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                    <div class="input-group">
+                         <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+                         <input type="text" class="form-control" placeholder="Type here...">
+                    </div>
+               </div>
+               <ul class="navbar-nav  justify-content-end">
+                    <li class="nav-item d-flex align-items-center mx-3">
+                         <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                              <i class="fa fa-file-pdf-o me-sm-1"></i>
+                              <span class="d-sm-inline d-none">PDF</span>
+                         </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center mx-3">
+                         <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                              <i class="fa fa-file-excel-o me-sm-1"></i>
+                              <span class="d-sm-inline d-none">EXCEL</span>
+                         </a>
+                    </li>
+                    <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                         <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                              <div class="sidenav-toggler-inner">
+                              <i class="sidenav-toggler-line"></i>
+                              <i class="sidenav-toggler-line"></i>
+                              <i class="sidenav-toggler-line"></i>
+                              </div>
+                         </a>
+                    </li>
+               </ul>
+          </div>
      </div>
 </nav>
