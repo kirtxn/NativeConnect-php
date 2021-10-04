@@ -1,3 +1,4 @@
 <?php
-     include "pages/index.php";
+     header("Location: dashboard/");
+     die();
 ?>
