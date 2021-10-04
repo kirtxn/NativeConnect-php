@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "chartjs-plugin-streaming": "^2.0.0"
+  }
+}
