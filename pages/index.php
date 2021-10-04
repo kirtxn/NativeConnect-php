@@ -142,9 +142,9 @@
      <script src="../assets/js/plugins/chartjs.min.js"></script>
      
      <?php
-          include "voltage.php";
-          include "current.php";
-          include "power.php";
+          include "js/voltage.php";
+          include "js/current.php";
+          include "js/power.php";
      ?>
 
      <script>
