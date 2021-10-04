@@ -27,11 +27,11 @@
 
 <body class="g-sidenav-show  bg-gray-100">
      <?php
-          include "../layout/sidebar.php";
+          include "layout/sidebar.php";
      ?>
      <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
           <?php
-          include "../layout/navbar.php";
+          include "layout/navbar.php";
      ?>
      <?php
           include '../connect.php';
@@ -142,12 +142,12 @@
      <script src="../assets/js/plugins/chartjs.min.js"></script>
      
      <?php
-          include "js/voltage.php";
-          include "js/current.php";
-          include "js/power.php";
-          include "js/energy.php";
-          include "js/frequency.php";
-          include "js/pf.php";
+          include "chartjs/voltage.php";
+          include "chartjs/current.php";
+          include "chartjs/power.php";
+          include "chartjs/energy.php";
+          include "chartjs/frequency.php";
+          include "chartjs/pf.php";
      ?>
 
      <script>
