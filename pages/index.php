@@ -142,6 +142,7 @@
      <script src="../assets/js/plugins/chartjs.min.js"></script>
      
      <?php
+          include "js/energy.php";
           include "js/voltage.php";
           include "js/current.php";
           include "js/power.php";
