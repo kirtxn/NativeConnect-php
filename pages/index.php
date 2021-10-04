@@ -68,6 +68,70 @@
                     </div>
                </div>
           </div>
+          <div class="container-fluid py-4">
+               <div class="row mt-4">
+                    <div class="col-lg-12">
+                         <div class="card z-index-2">
+                              <div class="card-header pb-0">
+                                   <h6>Power</h6>
+                              </div>
+                              <div class="card-body p-3">
+                                   <div class="chart">
+                                        <canvas id="chart-power" class="chart-canvas" height="300"></canvas>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="container-fluid py-4">
+               <div class="row mt-4">
+                    <div class="col-lg-12">
+                         <div class="card z-index-2">
+                              <div class="card-header pb-0">
+                                   <h6>Energy</h6>
+                              </div>
+                              <div class="card-body p-3">
+                                   <div class="chart">
+                                        <canvas id="chart-energy" class="chart-canvas" height="300"></canvas>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="container-fluid py-4">
+               <div class="row mt-4">
+                    <div class="col-lg-12">
+                         <div class="card z-index-2">
+                              <div class="card-header pb-0">
+                                   <h6>Frequency</h6>
+                              </div>
+                              <div class="card-body p-3">
+                                   <div class="chart">
+                                        <canvas id="chart-frequency" class="chart-canvas" height="300"></canvas>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="container-fluid py-4">
+               <div class="row mt-4">
+                    <div class="col-lg-12">
+                         <div class="card z-index-2">
+                              <div class="card-header pb-0">
+                                   <h6>PF</h6>
+                              </div>
+                              <div class="card-body p-3">
+                                   <div class="chart">
+                                        <canvas id="chart-pf" class="chart-canvas" height="300"></canvas>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
      </main>
      
      <!--   Core JS Files   -->
@@ -233,7 +297,7 @@
                tension: 0.4,
                borderWidth: 0,
                pointRadius: 0,
-               borderColor: "##FFFFFF",
+               borderColor: "#03FC17",
                borderWidth: 3,
                backgroundColor: gradientStroke2,
                fill: true,
@@ -510,7 +574,7 @@
                tension: 0.4,
                borderWidth: 0,
                pointRadius: 0,
-               borderColor: "##FFFFFF",
+               borderColor: "#03FC17",
                borderWidth: 3,
                backgroundColor: gradientStroke2,
                fill: true,
@@ -629,6 +693,10 @@
           },
      });
      </script>
+
+     <?php
+          include "power.php";
+     ?>
 
      <script>
      var win = navigator.platform.indexOf('Win') > -1;
