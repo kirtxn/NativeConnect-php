@@ -2,6 +2,10 @@
      // connect to database
      include 'connect.php';
 
+     // Get Time
+     date_default_timezone_set('Asia/Singapore');
+     $timestamp = date("Y-m-d H:i:s");
+
      // get data on R
      $voltageR = $_GET['voltageR'];
      $currentR = $_GET['currentR'];
@@ -27,9 +31,9 @@
      $pfT = $_GET['pfT'];
 
      // create query
-     $sqlR = "INSERT INTO R (voltage, current, power, energy, frequency, pf) VALUE ('$voltageR', '$currentR', '$powerR', '$energyR', '$frequencyR', '$pfR')";
-     $sqlS = "INSERT INTO S (voltage, current, power, energy, frequency, pf) VALUE ('$voltageS', '$currentS', '$powerS', '$energyS', '$frequencyS', '$pfS')";
-     $sqlT = "INSERT INTO T (voltage, current, power, energy, frequency, pf) VALUE ('$voltageT', '$currentT', '$powerT', '$energyT', '$frequencyT', '$pfT')";
+     $sqlR = "INSERT INTO R (voltage, current, power, energy, frequency, pf, created_at) VALUE ('$voltageR', '$currentR', '$powerR', '$energyR', '$frequencyR', '$pfR', '$timestamp')";
+     $sqlS = "INSERT INTO S (voltage, current, power, energy, frequency, pf, created_at) VALUE ('$voltageS', '$currentS', '$powerS', '$energyS', '$frequencyS', '$pfS', '$timestamp')";
+     $sqlT = "INSERT INTO T (voltage, current, power, energy, frequency, pf, created_at) VALUE ('$voltageT', '$currentT', '$powerT', '$energyT', '$frequencyT', '$pfT', '$timestamp')";
      
      // insert query to database
      $queryR = mysqli_query($connect, $sqlR);
