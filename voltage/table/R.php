@@ -10,8 +10,6 @@
                               <tr>
                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Parameter</th>
                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
-                                   <th></th>
-                                   <th></th>
                               </tr>
                          </thead>
                          <tbody>

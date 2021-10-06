@@ -10,8 +10,6 @@
                               <tr>
                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Parameter</th>
                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
-                                   <th></th>
-                                   <th></th>
                               </tr>
                          </thead>
                          <tbody>
@@ -19,7 +17,7 @@
                                    <td>
                                         <div class="d-flex px-2">
                                              <div>
-                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="spotify">
+                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Now">
                                              </div>
                                              <div class="my-auto">
                                              <h6 class="mb-0 text-sm">Now Voltage</h6>
@@ -27,22 +25,84 @@
                                         </div>
                                    </td>
                                    <td>
-                                        <p class="text-sm font-weight-bold mb-0">100v</p>
+                                        <p class="text-sm font-weight-bold mb-0">
+                                             <?php
+                                                  $value = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 0");
+                                                       while($d=mysqli_fetch_array($value)){
+                                                  echo $d['voltage'];
+                                                  }
+                                             ?>
+                                             V
+                                        </p>
                                    </td>
-                                   <td class="align-middle text-center">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                             <span class="me-2 text-xs font-weight-bold">50%</span>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <div class="d-flex px-2">
                                              <div>
-                                             <div class="progress">
-                                                  <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="200" style="width: 10%;"></div>
+                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Max">
                                              </div>
+                                             <div class="my-auto">
+                                             <h6 class="mb-0 text-sm">Max Voltage</h6>
                                              </div>
                                         </div>
                                    </td>
-                                   <td class="align-middle">
-                                        <button class="btn btn-link text-secondary mb-0">
-                                             <i class="fa fa-ellipsis-v text-xs"></i>
-                                        </button>
+                                   <td>
+                                        <p class="text-sm font-weight-bold mb-0">
+                                             <?php
+                                                  $value = mysqli_query($connect,"SELECT MAX(voltage) FROM S");
+                                                       while($d=mysqli_fetch_array($value)){
+                                                  echo $d['MAX(voltage)'];
+                                                  }
+                                             ?>
+                                             V
+                                        </p>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <div class="d-flex px-2">
+                                             <div>
+                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Min">
+                                             </div>
+                                             <div class="my-auto">
+                                             <h6 class="mb-0 text-sm">Min Voltage</h6>
+                                             </div>
+                                        </div>
+                                   </td>
+                                   <td>
+                                        <p class="text-sm font-weight-bold mb-0">
+                                             <?php
+                                                  $value = mysqli_query($connect,"SELECT MIN(voltage) FROM S");
+                                                       while($d=mysqli_fetch_array($value)){
+                                                  echo $d['MIN(voltage)'];
+                                                  }
+                                             ?>
+                                             V
+                                        </p>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <div class="d-flex px-2">
+                                             <div>
+                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Average">
+                                             </div>
+                                             <div class="my-auto">
+                                             <h6 class="mb-0 text-sm">Average Voltage</h6>
+                                             </div>
+                                        </div>
+                                   </td>
+                                   <td>
+                                        <p class="text-sm font-weight-bold mb-0">
+                                             <?php
+                                                  $value = mysqli_query($connect,"SELECT AVG(voltage) FROM S");
+                                                       while($d=mysqli_fetch_array($value)){
+                                                  echo $d['AVG(voltage)'];
+                                                  }
+                                             ?>
+                                             V
+                                        </p>
                                    </td>
                               </tr>
                          </tbody>
