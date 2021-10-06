@@ -1,19 +1,19 @@
 <script>
 
-     var ctx2 = document.getElementById("chart-voltage").getContext("2d");
-     var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+     var voltage = document.getElementById("chart-voltage").getContext("2d");
+     var gradientStroke1 = voltage.createLinearGradient(0, 230, 0, 50);
 
      gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
      gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
      gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
 
-     var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+     var gradientStroke2 = voltage.createLinearGradient(0, 230, 0, 50);
 
      gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
      gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
      gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
 
-     new Chart(ctx2, {
+     new Chart(voltage, {
           type: "line",
           data: {
           labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
@@ -95,44 +95,44 @@
                fill: true,
                data: [
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 8");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 8");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 7");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 7");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 6");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 6");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 5");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 5");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 4");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 4");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 3");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 3");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 2");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 2");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>,
@@ -143,8 +143,8 @@
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 0");
-					while($d=mysqli_fetch_array($R)){
+					$S = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 0");
+					while($d=mysqli_fetch_array($S)){
 					echo $d['voltage'];
 					}
 				?>],
@@ -160,56 +160,56 @@
                backgroundColor: gradientStroke2,
                fill: true,
                data: [<?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 8");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 8");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 7");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 7");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 6");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 6");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 5");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 5");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 4");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 4");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 3");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 3");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 2");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 2");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 1");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 1");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>,
                     <?php
-					$R = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 0");
-					while($d=mysqli_fetch_array($R)){
+					$T = mysqli_query($connect,"SELECT voltage FROM T ORDER BY id DESC LIMIT 1 OFFSET 0");
+					while($d=mysqli_fetch_array($T)){
 					echo $d['voltage'];
 					}
 				?>],
