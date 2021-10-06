@@ -139,12 +139,12 @@
      <script src="../assets/js/plugins/chartjs.min.js"></script>
      
      <?php
-          include "chartjs/voltage.php";
-          include "chartjs/current.php";
-          include "chartjs/power.php";
-          include "chartjs/energy.php";
-          include "chartjs/frequency.php";
-          include "chartjs/pf.php";
+          include "../chartjs/voltage.php";
+          include "../chartjs/current.php";
+          include "../chartjs/power.php";
+          include "../chartjs/energy.php";
+          include "../chartjs/frequency.php";
+          include "../chartjs/pf.php";
      ?>
 
      <script>
