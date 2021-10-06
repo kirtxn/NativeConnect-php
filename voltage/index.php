@@ -35,7 +35,7 @@
           ?>
           <div class="container-fluid py-4">
                <div class="row mt-4">
-                    <div class="col-lg-9">
+                    <div class="col-lg-12">
                          <div class="card z-index-2">
                               <div class="card-header pb-0">
                                    <h6>This Day</h6>
@@ -47,7 +47,7 @@
                               </div>
                          </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4 mt-2">
+                    <!-- <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4 mt-2">
                          <div class="card mb-3">
                               <div class="card-body p-3">
                                    <div class="row">
@@ -62,7 +62,6 @@
                                                        }
                                                   ?>
                                                   V
-                                                  <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
                                         </div>
@@ -88,7 +87,6 @@
                                                        }
                                                   ?>
                                                   V
-                                                  <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
                                         </div>
@@ -114,7 +112,6 @@
                                                        }
                                                   ?>
                                                   V
-                                                  <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
                                         </div>
@@ -140,7 +137,6 @@
                                                        }
                                                   ?>
                                                   V
-                                                  <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
                                         </div>
@@ -152,7 +148,7 @@
                                    </div>
                               </div>
                          </div>
-                    </div>
+                    </div> -->
                
                     <div class="row mt-4">
                          <?php
