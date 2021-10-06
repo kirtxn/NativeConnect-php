@@ -3,8 +3,6 @@
      <div class="container-fluid py-1 px-3">
           <nav aria-label="breadcrumb">
                <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-               <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">localhost</a></li>
-               <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">static</a></li>
                <li class="breadcrumb-item text-sm text-dark active" aria-current="page">dashboard</li>
                </ol>
                <h3 class="font-weight-bolder mb-0 mt-3">Dashboard</h3>

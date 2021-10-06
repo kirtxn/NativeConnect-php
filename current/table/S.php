@@ -1,7 +1,7 @@
 <div class="col-xl-4 col-sm-12 mb-xl-4">
      <div class="card mb-4">
           <div class="card-header pb-0">
-               <h6>Phase R</h6>
+               <h6>Phase S-N</h6>
           </div>
           <div class="card-body px-0 pt-0 pb-2">
                <div class="table-responsive p-0">
@@ -17,19 +17,19 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Now Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Now Current</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT voltage FROM S ORDER BY id DESC LIMIT 1 OFFSET 0");
+                                                  $value = mysqli_query($connect,"SELECT current FROM S ORDER BY id DESC LIMIT 1 OFFSET 0");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['voltage'];
+                                                  echo $d['current'];
                                                   }
                                              ?>
-                                             V
+                                             A
                                         </p>
                                    </td>
                               </tr>
@@ -37,19 +37,19 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Max Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Max Current</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT MAX(voltage) FROM S");
+                                                  $value = mysqli_query($connect,"SELECT MAX(current) FROM S");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['MAX(voltage)'];
+                                                  echo $d['MAX(current)'];
                                                   }
                                              ?>
-                                             V
+                                             A
                                         </p>
                                    </td>
                               </tr>
@@ -57,19 +57,19 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Min Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Min Current</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT MIN(voltage) FROM S");
+                                                  $value = mysqli_query($connect,"SELECT MIN(current) FROM S");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['MIN(voltage)'];
+                                                  echo $d['MIN(current)'];
                                                   }
                                              ?>
-                                             V
+                                             A
                                         </p>
                                    </td>
                               </tr>
@@ -77,19 +77,19 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">AVG Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">AVG Current</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT AVG(voltage) FROM S");
+                                                  $value = mysqli_query($connect,"SELECT AVG(current) FROM S");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['AVG(voltage)'];
+                                                  echo $d['AVG(current)'];
                                                   }
                                              ?>
-                                             V
+                                             A
                                         </p>
                                    </td>
                               </tr>

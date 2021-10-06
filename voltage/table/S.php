@@ -1,7 +1,7 @@
 <div class="col-xl-4 col-sm-12 mb-xl-4">
      <div class="card mb-4">
           <div class="card-header pb-0">
-               <h6>Phase R</h6>
+               <h6>Phase S-N</h6>
           </div>
           <div class="card-body px-0 pt-0 pb-2">
                <div class="table-responsive p-0">

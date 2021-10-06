@@ -1,7 +1,7 @@
 <div class="col-xl-4 col-sm-12 mb-xl-4">
      <div class="card mb-4">
           <div class="card-header pb-0">
-               <h6>Phase R</h6>
+               <h6>Phase T-N</h6>
           </div>
           <div class="card-body px-0 pt-0 pb-2">
                <div class="table-responsive p-0">
@@ -17,7 +17,7 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Now Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Now Power</h6>
                                              </div>
                                         </div>
                                    </td>
@@ -29,7 +29,7 @@
                                                   echo $d['power'];
                                                   }
                                              ?>
-                                             V
+                                             W
                                         </p>
                                    </td>
                               </tr>
@@ -37,7 +37,7 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Max Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Max Power</h6>
                                              </div>
                                         </div>
                                    </td>
@@ -49,7 +49,7 @@
                                                   echo $d['MAX(power)'];
                                                   }
                                              ?>
-                                             V
+                                             W
                                         </p>
                                    </td>
                               </tr>
@@ -57,7 +57,7 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Min Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Min Power</h6>
                                              </div>
                                         </div>
                                    </td>
@@ -69,7 +69,7 @@
                                                   echo $d['MIN(power)'];
                                                   }
                                              ?>
-                                             V
+                                             W
                                         </p>
                                    </td>
                               </tr>
@@ -77,7 +77,7 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">AVG Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">AVG Power</h6>
                                              </div>
                                         </div>
                                    </td>
@@ -89,7 +89,7 @@
                                                   echo $d['AVG(power)'];
                                                   }
                                              ?>
-                                             V
+                                             W
                                         </p>
                                    </td>
                               </tr>
