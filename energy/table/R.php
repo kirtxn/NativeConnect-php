@@ -17,16 +17,16 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Now Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Now Energy</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT voltage FROM R ORDER BY id DESC LIMIT 1 OFFSET 0");
+                                                  $value = mysqli_query($connect,"SELECT energy FROM R ORDER BY id DESC LIMIT 1 OFFSET 0");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['voltage'];
+                                                  echo $d['energy'];
                                                   }
                                              ?>
                                              V
@@ -37,16 +37,16 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Max Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Max Energy</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT MAX(voltage) FROM R");
+                                                  $value = mysqli_query($connect,"SELECT MAX(energy) FROM R");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['MAX(voltage)'];
+                                                  echo $d['MAX(energy)'];
                                                   }
                                              ?>
                                              V
@@ -57,16 +57,16 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">Min Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">Min Energy</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT MIN(voltage) FROM R");
+                                                  $value = mysqli_query($connect,"SELECT MIN(energy) FROM R");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['MIN(voltage)'];
+                                                  echo $d['MIN(energy)'];
                                                   }
                                              ?>
                                              V
@@ -77,16 +77,16 @@
                                    <td>
                                         <div class="d-flex px-4">
                                              <div class="mx-4 avatar avatar-sm rounded-circle me-2">
-                                                  <h6 class="mb-0 text-sm">AVG Voltage</h6>
+                                                  <h6 class="mb-0 text-sm">AVG Energy</h6>
                                              </div>
                                         </div>
                                    </td>
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT AVG(voltage) FROM R");
+                                                  $value = mysqli_query($connect,"SELECT AVG(energy) FROM R");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['AVG(voltage)'];
+                                                  echo $d['AVG(energy)'];
                                                   }
                                              ?>
                                              V

@@ -30,7 +30,7 @@
                     </a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link  active" href="/voltage">
+                    <a class="nav-link  " href="/voltage">
                          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plug" class="svg-inline--fa fa-plug fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M320,32a32,32,0,0,0-64,0v96h64Zm48,128H16A16,16,0,0,0,0,176v32a16,16,0,0,0,16,16H32v32A160.07,160.07,0,0,0,160,412.8V512h64V412.8A160.07,160.07,0,0,0,352,256V224h16a16,16,0,0,0,16-16V176A16,16,0,0,0,368,160ZM128,32a32,32,0,0,0-64,0v96h64Z"></path></svg>
                          </div>
@@ -54,7 +54,7 @@
                     </a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link  " href="../pages/rtl.html">
+                    <a class="nav-link  active" href="../pages/rtl.html">
                          <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="battery-full" class="svg-inline--fa fa-battery-full fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"></path></svg>
                          </div>
