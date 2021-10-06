@@ -55,7 +55,13 @@
                                         <div class="numbers">
                                              <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Voltage</p>
                                              <h5 class="font-weight-bolder mb-0">
-                                                  120v
+                                                  <?php
+                                                       $R = mysqli_query($connect,"SELECT voltage FROM R ORDER BY id DESC LIMIT 1 OFFSET 0");
+                                                            while($d=mysqli_fetch_array($R)){
+                                                       echo $d['voltage'];
+                                                       }
+                                                  ?>
+                                                  V
                                                   <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
@@ -75,7 +81,13 @@
                                         <div class="numbers">
                                              <p class="text-sm mb-0 text-capitalize font-weight-bold">Max Voltage</p>
                                              <h5 class="font-weight-bolder mb-0">
-                                                  120v
+                                                  <?php
+                                                       $R = mysqli_query($connect,"SELECT MAX(voltage) FROM R");
+                                                            while($d=mysqli_fetch_array($R)){
+                                                       echo $d['MAX(voltage)'];
+                                                       }
+                                                  ?>
+                                                  V
                                                   <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
@@ -95,7 +107,13 @@
                                         <div class="numbers">
                                              <p class="text-sm mb-0 text-capitalize font-weight-bold">Min Voltage</p>
                                              <h5 class="font-weight-bolder mb-0">
-                                                  120v
+                                                  <?php
+                                                       $R = mysqli_query($connect,"SELECT MIN(voltage) FROM R");
+                                                            while($d=mysqli_fetch_array($R)){
+                                                       echo $d['MIN(voltage)'];
+                                                       }
+                                                  ?>
+                                                  V
                                                   <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
@@ -115,7 +133,13 @@
                                         <div class="numbers">
                                              <p class="text-sm mb-0 text-capitalize font-weight-bold">Average Voltage</p>
                                              <h5 class="font-weight-bolder mb-0">
-                                                  120v
+                                                  <?php
+                                                       $R = mysqli_query($connect,"SELECT AVG(voltage) FROM R");
+                                                            while($d=mysqli_fetch_array($R)){
+                                                       echo $d['AVG(voltage)'];
+                                                       }
+                                                  ?>
+                                                  V
                                                   <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                                              </h5>
                                         </div>
@@ -536,5 +560,10 @@
      
      <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
      <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+     <script>
+          setTimeout(function(){
+               window.location.reload(1);
+          }, 5000);
+     </script>
 </body>
 </html>
