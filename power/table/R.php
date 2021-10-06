@@ -24,9 +24,9 @@
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT voltage FROM R ORDER BY id DESC LIMIT 1 OFFSET 0");
+                                                  $value = mysqli_query($connect,"SELECT power FROM R ORDER BY id DESC LIMIT 1 OFFSET 0");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['voltage'];
+                                                  echo $d['power'];
                                                   }
                                              ?>
                                              V
@@ -44,9 +44,9 @@
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT MAX(voltage) FROM R");
+                                                  $value = mysqli_query($connect,"SELECT MAX(power) FROM R");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['MAX(voltage)'];
+                                                  echo $d['MAX(power)'];
                                                   }
                                              ?>
                                              V
@@ -64,9 +64,9 @@
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT MIN(voltage) FROM R");
+                                                  $value = mysqli_query($connect,"SELECT MIN(power) FROM R");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['MIN(voltage)'];
+                                                  echo $d['MIN(power)'];
                                                   }
                                              ?>
                                              V
@@ -84,9 +84,9 @@
                                    <td>
                                         <p class="text-sm font-weight-bold mb-0">
                                              <?php
-                                                  $value = mysqli_query($connect,"SELECT AVG(voltage) FROM R");
+                                                  $value = mysqli_query($connect,"SELECT AVG(power) FROM R");
                                                        while($d=mysqli_fetch_array($value)){
-                                                  echo $d['AVG(voltage)'];
+                                                  echo $d['AVG(power)'];
                                                   }
                                              ?>
                                              V
