@@ -200,7 +200,7 @@
      <script>
           setTimeout(function(){
                window.location.reload(1);
-          }, 5000);
+          }, 6000);
      </script>
 </body>
 </html>
