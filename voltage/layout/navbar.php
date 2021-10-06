@@ -3,7 +3,7 @@
      <div class="container-fluid py-1 px-3">
           <nav aria-label="breadcrumb">
                <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-               <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">localhost</a></li>
+               <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="/">dashboard</a></li>
                <li class="breadcrumb-item text-sm text-dark active" aria-current="page">voltage</li>
                </ol>
                <h3 class="font-weight-bolder mb-0 mt-3">Voltage</h3>
@@ -16,18 +16,6 @@
                     </div>
                </div>
                <ul class="navbar-nav  justify-content-end">
-                    <li class="nav-item d-flex align-items-center mx-3">
-                         <a href="#" onclick="window.print();;return false;" class="nav-link text-body font-weight-bold px-0">
-                              <i class="fa fa-file-pdf-o me-sm-1"></i>
-                              <span class="d-sm-inline d-none">PDF</span>
-                         </a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center mx-3">
-                         <a href="excel.php" class="nav-link text-body font-weight-bold px-0">
-                              <i class="fa fa-file-excel-o me-sm-1"></i>
-                              <span class="d-sm-inline d-none">EXCEL</span>
-                         </a>
-                    </li>
                     <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                          <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
                               <div class="sidenav-toggler-inner">
