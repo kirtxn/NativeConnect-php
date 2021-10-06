@@ -42,7 +42,7 @@
                               </div>
                               <div class="card-body p-3">
                                    <div class="chart">
-                                        <canvas id="chart-voltage" class="chart-canvas" height="300"></canvas>
+                                        <canvas id="chart-frequency" class="chart-canvas" height="300"></canvas>
                                    </div>
                               </div>
                          </div>
@@ -82,7 +82,7 @@
      <script src="../assets/js/plugins/chartjs.min.js"></script>
      
      <?php
-          include "../chartjs/voltage.php";
+          include "../chartjs/frequency.php";
      ?>
 
      <script>
