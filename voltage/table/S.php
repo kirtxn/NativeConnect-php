@@ -1,7 +1,7 @@
-<div class="col-4">
+<div class="col-xl-4 col-sm-12 mb-xl-4">
      <div class="card mb-4">
           <div class="card-header pb-0">
-               <h6>Phase S</h6>
+               <h6>Phase R</h6>
           </div>
           <div class="card-body px-0 pt-0 pb-2">
                <div class="table-responsive p-0">
@@ -15,12 +15,9 @@
                          <tbody>
                               <tr>
                                    <td>
-                                        <div class="d-flex px-2">
-                                             <div>
-                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Now">
-                                             </div>
-                                             <div class="my-auto">
-                                             <h6 class="mb-0 text-sm">Now Voltage</h6>
+                                        <div class="d-flex px-4">
+                                             <div class="mx-4 avatar avatar-sm rounded-circle me-2">
+                                                  <h6 class="mb-0 text-sm">Now Voltage</h6>
                                              </div>
                                         </div>
                                    </td>
@@ -38,12 +35,9 @@
                               </tr>
                               <tr>
                                    <td>
-                                        <div class="d-flex px-2">
-                                             <div>
-                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Max">
-                                             </div>
-                                             <div class="my-auto">
-                                             <h6 class="mb-0 text-sm">Max Voltage</h6>
+                                        <div class="d-flex px-4">
+                                             <div class="mx-4 avatar avatar-sm rounded-circle me-2">
+                                                  <h6 class="mb-0 text-sm">Max Voltage</h6>
                                              </div>
                                         </div>
                                    </td>
@@ -61,12 +55,9 @@
                               </tr>
                               <tr>
                                    <td>
-                                        <div class="d-flex px-2">
-                                             <div>
-                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Min">
-                                             </div>
-                                             <div class="my-auto">
-                                             <h6 class="mb-0 text-sm">Min Voltage</h6>
+                                        <div class="d-flex px-4">
+                                             <div class="mx-4 avatar avatar-sm rounded-circle me-2">
+                                                  <h6 class="mb-0 text-sm">Min Voltage</h6>
                                              </div>
                                         </div>
                                    </td>
@@ -84,12 +75,9 @@
                               </tr>
                               <tr>
                                    <td>
-                                        <div class="d-flex px-2">
-                                             <div>
-                                                  <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="Average">
-                                             </div>
-                                             <div class="my-auto">
-                                             <h6 class="mb-0 text-sm">Average Voltage</h6>
+                                        <div class="d-flex px-4">
+                                             <div class="mx-4 avatar avatar-sm rounded-circle me-2">
+                                                  <h6 class="mb-0 text-sm">AVG Voltage</h6>
                                              </div>
                                         </div>
                                    </td>
