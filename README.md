@@ -1,6 +1,6 @@
 # NativeConnect
 Make native PHP to receive data from ESP32 and show as grafik with chart.js
-## Server
+## Server and Client
 Web Server : [NativeConnect-php](https://github.com/spothings/NativeConnect-php). <br/>
 client ESP32 : [NativeConnect-ino](https://github.com/spothings/NativeConnect-ino). <br/>
 ## screenshot
